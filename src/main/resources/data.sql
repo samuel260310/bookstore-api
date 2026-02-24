@@ -1,7 +1,67 @@
 INSERT INTO books (title, author, isbn, description) VALUES
-('Clean Code', 'Robert C. Martin', '9780132350884', 'Buenas prácticas de programación'),
-('Effective Java', 'Joshua Bloch', '9780134685991', 'Guía avanzada de Java');
+('Cien años de soledad', 'Gabriel García Márquez', '9780307474728', 'Novela emblemática del realismo mágico'),
+('El amor en los tiempos del cólera', 'Gabriel García Márquez', '9780307389732', 'Historia de amor eterno'),
+('1984', 'George Orwell', '9780451524935', 'Distopía sobre vigilancia y control'),
+('Rebelión en la granja', 'George Orwell', '9780451526342', 'Sátira política'),
+('Don Quijote de la Mancha', 'Miguel de Cervantes', '9788420412146', 'Clásico de la literatura española'),
+('La sombra del viento', 'Carlos Ruiz Zafón', '9788408172173', 'Misterio literario en Barcelona'),
+('El principito', 'Antoine de Saint-Exupéry', '9780156013987', 'Fábula filosófica'),
+('Crónica de una muerte anunciada', 'Gabriel García Márquez', '9780307388919', 'Tragedia anunciada'),
+('Fahrenheit 451', 'Ray Bradbury', '9781451673319', 'Censura y quema de libros'),
+('Rayuela', 'Julio Cortázar', '9788439721364', 'Novela experimental'),
+('El túnel', 'Ernesto Sabato', '9788432225067', 'Novela psicológica'),
+('La metamorfosis', 'Franz Kafka', '9788491050297', 'Transformación absurda'),
+('Los juegos del hambre', 'Suzanne Collins', '9780439023528', 'Distopía juvenil'),
+('Harry Potter y la piedra filosofal', 'J.K. Rowling', '9780747532699', 'Inicio de saga mágica'),
+('El código Da Vinci', 'Dan Brown', '9780307474278', 'Thriller religioso');
 
 INSERT INTO users (username, email) VALUES
-('user1', 'user1@mail.com'),
-('user2', 'user2@mail.com');
+('juanp', 'juanp@gmail.com'),
+('maria23', 'maria23@gmail.com'),
+('carlos_r', 'carlos_r@gmail.com'),
+('laura89', 'laura89@gmail.com'),
+('pedro_dev', 'pedro_dev@gmail.com'),
+('ana_l', 'ana_l@gmail.com'),
+('sofia_m', 'sofia_m@gmail.com'),
+('david99', 'david99@gmail.com'),
+('lucas77', 'lucas77@gmail.com'),
+('natalia_q', 'natalia_q@gmail.com'),
+('andres_k', 'andres_k@gmail.com'),
+('paula_s', 'paula_s@gmail.com'),
+('miguel_f', 'miguel_f@gmail.com'),
+('camila_b', 'camila_b@gmail.com'),
+('julian_t', 'julian_t@gmail.com');
+
+INSERT INTO ratings (book_id, user_id, score) VALUES
+(1, 1, 5),
+(2, 2, 4),
+(3, 3, 5),
+(4, 4, 4),
+(5, 5, 5),
+(6, 6, 4),
+(7, 7, 5),
+(8, 8, 3),
+(9, 9, 4),
+(10, 10, 5),
+(11, 11, 4),
+(12, 12, 5),
+(13, 13, 4),
+(14, 14, 5),
+(15, 15, 3);
+
+INSERT INTO reviews (book_id, user_id, content) VALUES
+(1, 1, 'Una obra maestra de la literatura latinoamericana.'),
+(2, 2, 'Historia muy romántica y profunda.'),
+(3, 3, 'Impactante y totalmente vigente.'),
+(4, 4, 'Crítica política muy inteligente.'),
+(5, 5, 'Un clásico imprescindible.'),
+(6, 6, 'Narrativa envolvente y misteriosa.'),
+(7, 7, 'Sencillo pero lleno de significado.'),
+(8, 8, 'Muy bien escrita, final sorprendente.'),
+(9, 9, 'Reflexión poderosa sobre la censura.'),
+(10, 10, 'Innovadora y desafiante como lectura.'),
+(11, 11, 'Oscura y psicológicamente intensa.'),
+(12, 12, 'Extraña pero fascinante.'),
+(13, 13, 'Muy entretenido y adictivo.'),
+(14, 14, 'Magia pura, ideal para todas las edades.'),
+(15, 15, 'Trama interesante aunque algo predecible.');
