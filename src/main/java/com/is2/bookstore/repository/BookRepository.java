@@ -1,4 +1,5 @@
-package Repository;
+
+package repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.is2.bookstore.model.Book;
@@ -16,11 +17,12 @@ public interface BookRepository extends JpaRepository<Book, Long> {
         WHERE (:author IS NULL OR LOWER(b.author) LIKE LOWER(CONCAT('%', :author, '%')))
         AND (:title IS NULL OR LOWER(b.title) LIKE LOWER(CONCAT('%', :title, '%')))
         AND (:isbn IS NULL OR b.isbn = :isbn)
-        """)
-    List<Book> search(
+    """)
+    List<Book> advancedSearch(
             @Param("author") String author,
             @Param("title") String title,
             @Param("isbn") String isbn
     );
+
 }
 
