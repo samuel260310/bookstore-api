@@ -5,6 +5,7 @@ import com.is2.bookstore.service.BookService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RestController
 @RequestMapping("/books")
 public class BookController {
@@ -13,6 +14,11 @@ public class BookController {
 
     public BookController(BookService bookService) {
         this.bookService = bookService;
+    }
+
+    @GetMapping("/search-simple")
+    public List<Book> searchSimple(@RequestParam("q") String query) {
+        return bookService.searchSimple(query);
     }
 
     @GetMapping("/search")

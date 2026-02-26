@@ -2,6 +2,7 @@ package com.is2.bookstore.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "books")
 public class Book {
 
     @Id
@@ -11,6 +12,7 @@ public class Book {
     private String title;
     private String author;
     private String isbn;
+    private String desccription;
 
     public Book() {
     }
@@ -46,4 +48,8 @@ public class Book {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
+
+    public String getDesccription() { return desccription; }
+
+    public void setDesccription(String desccription) { this.desccription = desccription; }
 }

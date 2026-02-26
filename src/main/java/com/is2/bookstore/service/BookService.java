@@ -14,6 +14,9 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
+    public List<Book> searchSimple(String keyword) {
+        return bookRepository.simpleSearch(keyword, keyword);
+    }
     public List<Book> advancedSearch(String author, String title, String isbn) {
         return bookRepository.advancedSearch(author, title, isbn);
     }
