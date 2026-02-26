@@ -2,6 +2,7 @@ package com.is2.bookstore.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "books")
 public class Book {
 
     @Id
