@@ -1,4 +1,4 @@
-package Controller;
+package com.is2.bookstore.Controller;
 
 import com.is2.bookstore.model.Book;
 import com.is2.bookstore.service.BookService;

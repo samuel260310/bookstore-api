@@ -1,4 +1,4 @@
-package service;
+package com.is2.bookstore.service;
 
 import com.is2.bookstore.model.Book;
 import com.is2.bookstore.repository.BookRepository;
