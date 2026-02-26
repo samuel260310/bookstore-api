@@ -6,3 +6,22 @@ Content-Type: application/json
   "userId": 10,
   "score": 4
 }
+
+POST http://localhost:8080/review
+Content-Type: application/json
+
+{
+  "bookId": 1,
+  "userId": 1,
+  "content": "Muy buen libro, lo recomiendo."
+}
+
+### Preview de reseña (sin guardar)
+POST http://localhost:8080/review/preview
+Content-Type: application/json
+
+{
+  "bookId": 1,
+  "userId": 1,
+  "content": "Muy buen libro, lo recomiendo."
+}
