@@ -24,9 +24,14 @@ public interface BookRepository extends JpaRepository<Book, Long> {
             @Param("isbn") String isbn
     );
 
-    List<Book> simpleSearch
-            (String title,
-             String author
-    );
+    @Query("""
+    SELECT b FROM Book b
+    WHERE LOWER(b.title) LIKE LOWER(CONCAT('%', :keyword, '%'))
+       OR LOWER(b.author) LIKE LOWER(CONCAT('%', :keyword, '%'))
+""")
+    List<Book> simpleSearch(@Param("keyword") String keyword);
+
+
+
 }
 

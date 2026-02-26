@@ -1,4 +1,4 @@
-package com.is2.bookstore.controller;
+package com.is2.bookstore.Controller;
 
 import com.is2.bookstore.model.Rating;
 import com.is2.bookstore.repository.RatingRepository;
